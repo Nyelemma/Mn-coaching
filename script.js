@@ -60,8 +60,7 @@
       message || "-",
     ];
 
-    // TODO: Replace with your real email address.
-    const to = "hello@mncoaching.example";
+    const to = "mikeyjnye@gmail.com";
     const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(lines.join("\n"))}`;
