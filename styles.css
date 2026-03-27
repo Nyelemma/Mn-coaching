@@ -212,6 +212,16 @@ a {
   background: rgba(255, 255, 255, 0.09);
 }
 
+.btn-icon {
+  gap: 8px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
 .hero {
   padding: 72px 0 22px;
 }
@@ -499,6 +509,12 @@ textarea:focus-visible {
   display: flex;
   justify-content: space-between;
   gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
