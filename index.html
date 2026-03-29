@@ -110,7 +110,7 @@
 
     <header class="site-header" data-header>
       <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="MN Coaching home">
+        <a class="brand" href="index.html" aria-label="MN Coaching home">
           <span class="brand-mark" aria-hidden="true">MN</span>
           <span class="brand-text">Coaching</span>
         </a>
@@ -128,10 +128,12 @@
           </button>
 
           <div class="nav-panel" id="primary-nav" data-nav-panel>
+            <a class="nav-link" href="services.html">Services</a>
             <a class="nav-link" href="#services">Coaching</a>
             <a class="nav-link" href="#why">Why MN</a>
             <a class="nav-link" href="#areas">Areas</a>
             <a class="nav-link" href="#pricing">Sessions</a>
+            <a class="nav-link" href="#reviews">Reviews</a>
             <a class="nav-link" href="#contact">Contact</a>
             <a
               class="btn btn-ghost btn-icon"
@@ -208,6 +210,10 @@
             <p class="muted">
               Sessions are built around current level, learning style, and goals — from fundamentals to advanced
               position-specific work.
+            </p>
+            <p class="muted">
+              <a href="services.html">Full services page</a> — 1-to-1, kids training, groups &amp; position-specific
+              coaching in Morecambe, Lancaster &amp; nearby.
             </p>
           </div>
 
@@ -384,6 +390,93 @@
         </div>
       </section>
 
+      <section class="section section-alt" id="reviews" aria-labelledby="home-reviews-heading">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="home-reviews-heading">What parents say</h2>
+            <p class="muted">
+              Five-star reviews from local parents — players aged 6–15 across Morecambe, Lancaster, Heysham, Carnforth and
+              the surrounding area.
+            </p>
+          </div>
+
+          <div class="review-grid">
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                My son was nervous after a tough season; within a few weeks his touch looked calmer and he started asking
+                to practise at home. The coach explains everything so he understands the “why,” not just the drill.
+                He’s buzzing for school matches again.
+              </p>
+              <footer>— Sarah T., parent of a 9-year-old (Morecambe)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                Our daughter wanted proper goalkeeper work — handling, positioning, distribution — and we struggled to
+                find that locally. These sessions are intense but fun; her coach is patient and technically spot-on.
+                She’s been called up for county training and we credit the consistency here.
+              </p>
+              <footer>— James H., parent of a 12-year-old (Lancaster)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                He’s only seven and I worried he’d lose interest. Instead he counts down to every session. They mix games
+                with real coaching points; his balance and confidence on the ball have come on loads. Worth every penny.
+              </p>
+              <footer>— Emma L., parent of a 7-year-old (Heysham)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                At fourteen he needed more than club training once a week — sharper decisions, quicker feet, and help
+                with the physical side without burning him out. The sessions feel like real football, not endless cones.
+                His manager has noticed the difference.
+              </p>
+              <footer>— David K., parent of a 14-year-old (Carnforth)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                We booked a small group with two school friends and it’s been brilliant — they push each other but still
+                get individual feedback. Great for kids who thrive on competition. Communication and booking have always
+                been straightforward.
+              </p>
+              <footer>— Rachel M., parent of an 11-year-old (Morecambe)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                Six years old and full of beans — I needed someone who could channel that energy. The coach is firm but
+                kind; he listens to our son and adapts when he’s tired or having an off day. We’ve seen real listening
+                and respect, which matters as much as the skills.
+              </p>
+              <footer>— Tom W., parent of a 6-year-old (Lancaster)</footer>
+            </blockquote>
+
+            <blockquote class="review-card">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <p class="review-text">
+                Fifteen, opinionated, and picky about who he learns from — he immediately respected the session quality.
+                Position-specific work on timing runs and defending 1v1 has tightened his game before trials. As a parent
+                I appreciate the honesty and clear targets each week.
+              </p>
+              <footer>— Nicola P., parent of a 15-year-old (Morecambe)</footer>
+            </blockquote>
+          </div>
+
+          <p class="small muted center reviews-crosslink">
+            More detail on each service on our <a href="services.html">football coaching services</a> page.
+          </p>
+        </div>
+      </section>
+
       <section class="section" id="contact">
         <div class="container">
           <div class="section-head">
@@ -490,7 +583,14 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p class="small muted">© <span id="year"></span> MN Coaching. All rights reserved.</p>
+        <div>
+          <p class="small muted">© <span id="year"></span> MN Coaching. All rights reserved.</p>
+          <nav class="footer-links" aria-label="Footer">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
         <div class="footer-social">
           <a
             class="btn btn-ghost btn-icon"
