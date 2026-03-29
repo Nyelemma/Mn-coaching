@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mncoaching.co.uk/sitemap.xml
