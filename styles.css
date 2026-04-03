@@ -338,6 +338,17 @@ h3 {
   margin-top: 18px;
 }
 
+.reviews-google-cta {
+  margin: 0 0 22px;
+}
+
+.cta-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
