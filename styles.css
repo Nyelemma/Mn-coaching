@@ -338,8 +338,13 @@ h3 {
   margin-top: 18px;
 }
 
-.reviews-google-cta {
-  margin: 0 0 22px;
+.reviews-google-panel {
+  max-width: 56ch;
+  margin: 0 auto 22px;
+}
+
+.reviews-google-panel__cta {
+  margin: 16px 0 0;
 }
 
 .cta-banner-actions {
@@ -563,48 +568,6 @@ textarea:focus-visible {
   max-width: 65ch;
 }
 
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-top: 8px;
-}
-
-.review-card {
-  margin: 0;
-  border-radius: var(--radius);
-  padding: 18px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-  gap: 12px;
-  min-height: 100%;
-}
-
-.review-card .review-text {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 15px;
-  line-height: 1.55;
-}
-
-.review-card footer {
-  margin: 0;
-  padding-top: 4px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 13px;
-  color: var(--muted);
-  font-style: normal;
-}
-
-.stars {
-  margin: 0;
-  letter-spacing: 2px;
-  font-size: 15px;
-  line-height: 1;
-  color: #f5c84c;
-}
-
 .service-detail {
   border-radius: var(--radius);
   padding: 22px;
@@ -661,10 +624,6 @@ textarea:focus-visible {
     grid-template-columns: 1fr;
   }
   .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .review-grid {
     grid-template-columns: 1fr;
   }
 
