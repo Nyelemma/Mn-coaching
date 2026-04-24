@@ -22,7 +22,7 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="MN Coaching" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#0b0b0b" />
     <meta name="geo.region" content="GB" />
     <meta name="geo.placename" content="Morecambe, Lancaster, Heysham, Carnforth, Lancashire" />
 
@@ -96,9 +96,9 @@
             "sameAs": ["https://www.instagram.com/MN_Football_coaching/"],
             "serviceType": [
               "Football coaching",
-              "Kids football training",
+              "Kids Kicks sessions",
               "Youth football coaching",
-              "1-to-1 football coaching",
+              "1-2-1 football coaching",
               "Small group football coaching",
               "Position-specific football coaching"
             ]
@@ -110,14 +110,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   </head>
-  <body>
+  <body class="page-home">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
@@ -148,11 +148,11 @@
             <a class="nav-link" href="#reviews">Reviews</a>
             <a class="nav-link" href="#contact">Contact</a>
             <a
-              class="btn btn-ghost btn-icon"
+              class="btn btn-ghost btn-icon btn-nav-wa"
               href="https://wa.me/447943869697"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Chat on WhatsApp"
+              aria-label="WhatsApp MN Coaching"
             >
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path
@@ -160,9 +160,9 @@
                   fill="currentColor"
                 />
               </svg>
-              Chat on WhatsApp
+              <span class="btn-nav-wa__label">WhatsApp</span>
             </a>
-            <a class="btn btn-primary nav-cta" href="#contact">Book a session</a>
+            <a class="btn btn-primary nav-cta" href="#contact">Book</a>
           </div>
         </nav>
       </div>
@@ -170,47 +170,31 @@
 
     <main id="main">
       <section class="hero" id="top">
+        <div class="hero-diagonal" aria-hidden="true"></div>
+        <div class="hero-diagonal hero-diagonal--2" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">1-to-1 & small group football coaching</p>
-            <h1>Tailor‑made sessions that build confident, smarter players.</h1>
-            <p class="lead">
-              UEFA qualified, highly experienced coaches for all ages <strong>6–18+</strong>.
-              Training designed around the player (or group), their position, and their goals.
-            </p>
-            <p class="lead">
-              We offer 1-to-1 football coaching, kids football training, and small group sessions across Morecambe and
-              nearby areas including Lancaster, Heysham, and Carnforth.
+            <p class="hero-kicker">Elite football coaching</p>
+            <h1 class="hero-title">MN <span class="hero-title__co">Coaching</span></h1>
+            <p class="hero-subtitle">1-2-1 coaching · Small groups · Kids Kicks sessions</p>
+            <p class="hero-lead">
+              UEFA-qualified coaches for ages <strong>6–18+</strong>. Sessions built around you — technique, game
+              intelligence, and confidence that carries onto match day. Serving
+              <strong>Morecambe, Lancaster, Heysham, Carnforth</strong> and nearby. Evenings, weekends, and we can come
+              to you.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">Enquire / book</a>
-              <a class="btn btn-ghost" href="#services">What we cover</a>
+              <a class="btn btn-primary" href="#contact">Book a session</a>
+              <a class="hero-text-link" href="#services">View services</a>
             </div>
 
-            <ul class="hero-badges" aria-label="Key details">
-              <li class="badge">Tailor‑made plans</li>
-              <li class="badge">All abilities</li>
-              <li class="badge">We can come to you</li>
-              <li class="badge">Flexible: evenings & weekends</li>
-              <li class="badge">Morecambe • Lancaster • Heysham • Carnforth &amp; nearby</li>
+            <ul class="hero-benefits" aria-label="What you get">
+              <li>Personalised session design</li>
+              <li>Clear targets and feedback</li>
+              <li>Game-realistic practices</li>
+              <li>Confidence, technique &amp; decisions</li>
             </ul>
-          </div>
-
-          <div class="hero-card" role="group" aria-label="Quick info">
-            <div class="card">
-              <h2 class="card-title">What you’ll get</h2>
-              <ul class="checklist">
-                <li>Personalised session design</li>
-                <li>Clear targets and feedback</li>
-                <li>Game-realistic practices</li>
-                <li>Confidence, technique, decision-making</li>
-              </ul>
-              <div class="divider" role="presentation"></div>
-              <p class="small muted">
-                Ages 6–18+ • 1-to-1, pairs, and small groups • Pitch/home/club options (where available)
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -218,55 +202,58 @@
       <section class="section" id="services">
         <div class="container">
           <div class="section-head">
-            <h2>Coaching that fits the player</h2>
+            <h2>Services</h2>
             <p class="muted">
-              Sessions are built around current level, learning style, and goals — from fundamentals to advanced
-              position-specific work.
-            </p>
-            <p class="muted">
-              <a href="services.html">Full services page</a> — 1-to-1, kids training, groups &amp; position-specific
-              coaching in Morecambe, Lancaster &amp; nearby.
+              Three ways to train with MN Coaching — plus position-specific detail when you need it.
+              <a href="services.html">Full breakdown on our services page</a>.
             </p>
           </div>
 
           <div class="grid-3">
-            <article class="feature">
-              <h3>1-to-1 Coaching</h3>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="14" r="6" />
+                  <path d="M12 40c0-8 5-14 12-14s12 6 12 14" />
+                </svg>
+              </div>
+              <h3>1-2-1 Coaching</h3>
               <p>
-                High-rep, high-feedback sessions to improve technique, speed of thought, confidence, and match
-                impact.
+                Maximum touches and instant feedback — sharpen technique, confidence, and match impact with a plan
+                built only for you.
               </p>
-              <ul class="bullets">
-                <li>Technique & ball mastery</li>
-                <li>Finishing & attacking play</li>
-                <li>Defending fundamentals</li>
-              </ul>
+              <a class="btn btn-ghost" href="#contact">Book now</a>
             </article>
 
-            <article class="feature">
-              <h3>Small Group Coaching</h3>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="14" r="5" />
+                  <circle cx="32" cy="14" r="5" />
+                  <path d="M8 38c0-6 4-11 10-11h12c6 0 10 5 10 11" />
+                </svg>
+              </div>
+              <h3>Small Group Sessions</h3>
               <p>
-                Pairs and small groups (friends/teammates) for competitive, game-realistic learning with targeted
-                outcomes.
+                Train with teammates or friends — realistic overloads, combination play, and decisions under pressure,
+                with a personal coaching point every session.
               </p>
-              <ul class="bullets">
-                <li>Combination play</li>
-                <li>1v1 / 2v2 / 3v3 formats</li>
-                <li>Decision-making under pressure</li>
-              </ul>
+              <a class="btn btn-ghost" href="#contact">Join a session</a>
             </article>
 
-            <article class="feature">
-              <h3>Position‑Specific</h3>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="16" r="6" />
+                  <path d="M14 42l10-18 10 18M18 34h12" />
+                </svg>
+              </div>
+              <h3>Kids Kicks Sessions</h3>
               <p>
-                Tailored detail for the modern game — the “why” behind choices and the habits that translate to
-                matches.
+                Fun, age-right sessions that build fundamentals — dribbling, passing, shooting — and love for the game
+                in a positive, high-energy environment.
               </p>
-              <ul class="bullets">
-                <li>Wingers, strikers, midfielders</li>
-                <li>Defenders & full-backs</li>
-                <li>Movement, scanning, timing</li>
-              </ul>
+              <a class="btn btn-ghost" href="#contact">Get started</a>
             </article>
           </div>
         </div>
@@ -276,7 +263,7 @@
         <div class="container">
           <div class="split">
             <div>
-              <h2>Why MN Coaching</h2>
+              <h2>Why MN</h2>
               <p class="muted">
                 The goal is simple: make training feel like the game, so improvements show up on match day.
               </p>
@@ -316,7 +303,7 @@
       <section class="section" id="areas">
         <div class="container">
           <div class="section-head">
-            <h2>Where we coach</h2>
+            <h2>Areas</h2>
             <p class="muted">
               We offer sessions across <strong>Morecambe</strong> and nearby areas including
               <strong>Lancaster</strong>, <strong>Heysham</strong>, and <strong>Carnforth</strong> — and we can come to
@@ -354,7 +341,7 @@
       <section class="section section-alt" id="pricing">
         <div class="container">
           <div class="section-head">
-            <h2>Sessions</h2>
+            <h2>Sessions &amp; formats</h2>
             <p class="muted">
               Choose the format that suits you. Final session plans are always tailored to the player/group.
             </p>
@@ -369,7 +356,7 @@
                 <li>Detailed feedback</li>
                 <li>Position-specific options</li>
               </ul>
-              <a class="btn btn-primary" href="#contact">Enquire</a>
+              <a class="btn btn-primary" href="#contact">Book now</a>
             </div>
 
             <div class="price card highlight" aria-label="Most popular">
@@ -378,10 +365,10 @@
               <p class="muted">Compete, learn, and improve together.</p>
               <ul class="checklist">
                 <li>Game-realistic formats</li>
-                <li>Individual & group targets</li>
+                <li>Individual &amp; group targets</li>
                 <li>Great value per player</li>
               </ul>
-              <a class="btn btn-primary" href="#contact">Enquire</a>
+              <a class="btn btn-primary" href="#contact">Join a session</a>
             </div>
 
             <div class="price card">
@@ -392,20 +379,16 @@
                 <li>Flexible scheduling</li>
                 <li>Goal-based blocks</li>
               </ul>
-              <a class="btn btn-primary" href="#contact">Discuss</a>
+              <a class="btn btn-primary" href="#contact">Enquire</a>
             </div>
           </div>
-
-          <p class="small muted center">
-            Want me to add exact prices and session lengths? Tell me your options and I’ll update this section.
-          </p>
         </div>
       </section>
 
       <section class="section section-alt" id="reviews" aria-labelledby="home-reviews-heading">
         <div class="container">
           <div class="section-head">
-            <h2 id="home-reviews-heading">What parents say</h2>
+            <h2 id="home-reviews-heading">Reviews</h2>
             <p class="muted">
               Ratings and written feedback from parents live on our Google Business Profile — open Google to read the
               full, up-to-date reviews.
@@ -437,9 +420,9 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="section-head">
-            <h2>Contact / Booking</h2>
+            <h2>Contact</h2>
             <p class="muted">
-              Send a quick message and we’ll recommend the best session format.
+              Tell us about the player and we’ll recommend the best format — then book your first session.
             </p>
           </div>
 
@@ -456,10 +439,11 @@
               <div class="field">
                 <label for="type">Session type</label>
                 <select id="type" name="type">
-                  <option value="1-to-1">1-to-1</option>
-                  <option value="small-group">Small group</option>
-                  <option value="position-specific">Position-specific</option>
-                  <option value="not-sure">Not sure</option>
+                  <option value="1-2-1">1-2-1 coaching</option>
+                  <option value="small-group">Small group sessions</option>
+                  <option value="kids-kicks">Kids Kicks sessions</option>
+                  <option value="position-specific">Position-specific add-on</option>
+                  <option value="not-sure">Not sure — advise me</option>
                 </select>
               </div>
               <div class="field">
@@ -478,7 +462,7 @@
               </div>
 
               <div class="form-actions full">
-                <button class="btn btn-primary" type="submit">Create enquiry email</button>
+                <button class="btn btn-primary" type="submit">Send enquiry</button>
                 <p class="small muted">
                   This opens your email app with a pre-filled message (no data is stored on the website).
                 </p>
@@ -582,6 +566,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="sticky-cta" role="region" aria-label="Quick booking">
+      <div class="sticky-cta-inner">
+        <a class="btn btn-primary" href="#contact">Book a session</a>
+        <a class="btn btn-ghost" href="https://wa.me/447943869697" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
 
     <script src="./script.js" defer></script>
   </body>

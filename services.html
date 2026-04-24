@@ -22,7 +22,7 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="MN Coaching" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#0b0b0b" />
 
     <link rel="canonical" href="https://mncoaching.co.uk/services.html" />
 
@@ -104,8 +104,8 @@
                 "position": 2,
                 "item": {
                   "@type": "Service",
-                  "name": "Kids football training",
-                  "description": "Age-appropriate coaching for children, building fundamentals in a positive environment.",
+                  "name": "Kids Kicks sessions",
+                  "description": "Age-appropriate coaching for children — fundamentals and fun in a positive environment.",
                   "provider": { "@id": "https://mncoaching.co.uk/#localbusiness" },
                   "areaServed": "Morecambe, Lancaster, Heysham, Carnforth and Lancashire"
                 }
@@ -148,12 +148,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -183,11 +183,11 @@
             <a class="nav-link" href="#parent-reviews">Reviews</a>
             <a class="nav-link" href="index.html#contact">Contact</a>
             <a
-              class="btn btn-ghost btn-icon"
+              class="btn btn-ghost btn-icon btn-nav-wa"
               href="https://wa.me/447943869697"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Chat on WhatsApp"
+              aria-label="WhatsApp MN Coaching"
             >
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path
@@ -195,9 +195,9 @@
                   fill="currentColor"
                 />
               </svg>
-              Chat on WhatsApp
+              <span class="btn-nav-wa__label">WhatsApp</span>
             </a>
-            <a class="btn btn-primary nav-cta" href="index.html#contact">Book a session</a>
+            <a class="btn btn-primary nav-cta" href="index.html#contact">Book</a>
           </div>
         </nav>
       </div>
@@ -205,21 +205,23 @@
 
     <main id="main">
       <div class="page-hero" id="top">
+        <div class="hero-diagonal" aria-hidden="true"></div>
+        <div class="hero-diagonal hero-diagonal--2" aria-hidden="true"></div>
         <div class="container">
-          <p class="eyebrow">MN Coaching — football services</p>
-          <h1>Football coaching services in Morecambe, Lancaster &amp; nearby</h1>
+          <p class="hero-kicker">MN Coaching</p>
+          <h1>Football coaching services</h1>
           <p class="lead">
-            We offer <strong>1-to-1 football coaching</strong>, <strong>kids football training</strong>, and
-            <strong>small group sessions</strong> across Morecambe and nearby areas including Lancaster, Heysham, and
-            Carnforth — with optional <strong>position-specific</strong> work for players who want extra detail.
+            <strong>1-2-1 coaching</strong>, <strong>small group sessions</strong>, and <strong>Kids Kicks</strong> across
+            Morecambe, Lancaster, Heysham, Carnforth &amp; nearby — plus <strong>position-specific</strong> work when you
+            want extra detail.
           </p>
           <p class="lead">
-            Every plan is built around the player’s age, level and goals. UEFA-qualified coaches, flexible evenings and
-            weekends, and we can often come to you.
+            Every plan is built around age, level, and goals. UEFA-qualified coaches; evenings, weekends; we can often
+            come to you.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="index.html#contact">Enquire / book</a>
-            <a class="btn btn-ghost" href="#parent-reviews">Parent reviews</a>
+            <a class="btn btn-primary" href="index.html#contact">Book a session</a>
+            <a class="btn btn-ghost" href="#parent-reviews">Reviews</a>
           </div>
         </div>
       </div>
@@ -227,15 +229,15 @@
       <section class="section" aria-labelledby="services-heading">
         <div class="container">
           <div class="section-head">
-            <h2 id="services-heading">Our coaching services</h2>
+            <h2 id="services-heading">Our services</h2>
             <p class="muted">
-              Detailed breakdown of what we offer — the same programmes you’ll see summarised on our
-              <a href="index.html">homepage</a>. Not sure which fits? Message us and we’ll recommend the best format.
+              Full detail on every format — same three pillars as the <a href="index.html">homepage</a>. Not sure what
+              fits? Message us and we’ll recommend the best option.
             </p>
           </div>
 
           <article class="service-detail" id="service-one-to-one">
-            <h2>1-to-1 football coaching</h2>
+            <h2>1-2-1 coaching</h2>
             <p class="lede">
               One coach, one player: maximum touches, instant feedback, and a session plan written around your child’s
               strengths and gaps. Ideal when you want fast progress on technique, confidence, or a specific part of the
@@ -250,7 +252,7 @@
           </article>
 
           <article class="service-detail" id="service-kids">
-            <h2>Kids football training (ages 6–15+)</h2>
+            <h2>Kids Kicks sessions (ages 6–15+)</h2>
             <p class="lede">
               Young players learn best when sessions feel like play with a purpose. We keep energy high, explain ideas in
               simple language, and celebrate effort as well as execution — while still pushing standards.
@@ -296,7 +298,7 @@
               Ready to book <strong>1-to-1</strong>, <strong>kids training</strong>, or a <strong>small group</strong> in
               Morecambe, Lancaster, Heysham or Carnforth? Send a message and we’ll sort format, venue and timing.
             </p>
-            <a class="btn btn-primary" href="index.html#contact">Contact MN Coaching</a>
+            <a class="btn btn-primary" href="index.html#contact">Enquire</a>
           </div>
         </div>
       </section>
@@ -304,7 +306,7 @@
       <section class="section section-alt" id="parent-reviews" aria-labelledby="reviews-heading">
         <div class="container">
           <div class="section-head">
-            <h2 id="reviews-heading">What parents say</h2>
+            <h2 id="reviews-heading">Reviews</h2>
             <p class="muted">
               Ratings and written feedback from parents live on our Google Business Profile — open Google to read the
               full, up-to-date reviews.
@@ -336,7 +338,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 >Reviews on Google</a>
-              <a class="btn btn-primary" href="index.html#contact">Book a session</a>
+              <a class="btn btn-primary" href="index.html#contact">Book now</a>
             </div>
           </div>
         </div>
@@ -387,6 +389,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="sticky-cta" role="region" aria-label="Quick booking">
+      <div class="sticky-cta-inner">
+        <a class="btn btn-primary" href="index.html#contact">Book a session</a>
+        <a class="btn btn-ghost" href="https://wa.me/447943869697" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
 
     <script src="./script.js" defer></script>
   </body>
