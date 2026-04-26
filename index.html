@@ -96,12 +96,23 @@
             "sameAs": ["https://www.instagram.com/MN_Football_coaching/"],
             "serviceType": [
               "Football coaching",
+              "MN Mini Kicks (ages 2–5)",
               "Kids Kicks sessions",
               "Youth football coaching",
               "1-2-1 football coaching",
               "Small group football coaching",
               "Position-specific football coaching"
             ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://mncoaching.co.uk/#service-mini-kicks",
+            "name": "MN Mini Kicks",
+            "alternateName": "MN Mini Kicks (ages 2–5)",
+            "description": "Weekly introductory football sessions for ages 2–5: parent-and-child play for 2–3s, structured fun for 4–5s. Register interest for Saturday or Sunday mornings (times TBC).",
+            "provider": { "@id": "https://mncoaching.co.uk/#localbusiness" },
+            "url": "https://docs.google.com/forms/d/1qHRt_CTebqp7fzGn4LnAEVLxRA7yOFCWUo5jcwsUfqg/viewform",
+            "areaServed": "Morecambe, Lancaster, Heysham, Carnforth and Lancashire"
           }
         ]
       }
@@ -114,17 +125,26 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles.css?v=3" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mn-coaching-logo.png" />
   </head>
   <body class="page-home">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="MN Coaching home">
-          <span class="brand-mark" aria-hidden="true">MN</span>
-          <span class="brand-text">Coaching</span>
+        <a class="brand brand--logo" href="index.html" aria-label="MN Coaching home">
+          <span class="brand-logo-wrap" aria-hidden="true">
+            <img
+              class="brand-logo-img"
+              src="./images/mn-coaching-logo.png?v=2"
+              alt=""
+              width="48"
+              height="48"
+              decoding="async"
+            />
+          </span>
         </a>
 
         <nav class="nav" aria-label="Primary">
@@ -141,6 +161,7 @@
 
           <div class="nav-panel" id="primary-nav" data-nav-panel>
             <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="#mini-kicks">Mini Kicks</a>
             <a class="nav-link" href="#services">Coaching</a>
             <a class="nav-link" href="#why">Why MN</a>
             <a class="nav-link" href="#areas">Areas</a>
@@ -199,6 +220,77 @@
         </div>
       </section>
 
+      <section class="section section--mini-kicks" id="mini-kicks" aria-labelledby="mini-kicks-heading">
+        <div class="container">
+          <div class="section-head">
+            <img
+              class="mini-kicks-head-logo"
+              src="./images/mn-coaching-logo.png?v=2"
+              alt=""
+              width="84"
+              height="84"
+              decoding="async"
+              aria-hidden="true"
+            />
+            <p class="mini-kicks-eyebrow">Register your interest</p>
+            <h2 id="mini-kicks-heading">MN Mini Kicks</h2>
+            <p class="mini-kicks-tag">Ages 2–5 · Weekly sessions</p>
+            <p class="muted">
+              New weekly sessions for little ones — confidence, coordination, and first touches with the ball in a
+              welcoming, coach-led environment.
+            </p>
+          </div>
+
+          <div class="mini-kicks-layout">
+            <div class="mini-kicks-copy">
+              <p class="mini-kicks-lead">
+                We’re planning <strong>Saturday or Sunday mornings</strong> (exact times TBC). Tell us you’re interested
+                — there’s no obligation; we’ll keep you posted as groups take shape.
+              </p>
+              <ul class="mini-kicks-points">
+                <li><strong>Ages 2–3:</strong> parent &amp; child — social play, movement, and gentle introduction to the ball.</li>
+                <li><strong>Ages 4–5:</strong> fun, structured football — coordination, confidence, and learning through play.</li>
+                <li>Focus on <strong>first touch</strong>, balance, listening, and enjoying time on the pitch together.</li>
+              </ul>
+              <div class="mini-kicks-cta">
+                <a
+                  class="btn btn-primary"
+                  href="https://docs.google.com/forms/d/1qHRt_CTebqp7fzGn4LnAEVLxRA7yOFCWUo5jcwsUfqg/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Register interest</a
+                >
+                <a class="btn btn-ghost" href="#contact">Ask a question</a>
+                <a
+                  class="hero-text-link"
+                  href="https://wa.me/447943869697"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+            <aside class="mini-kicks-snap" aria-label="Session snapshot">
+              <h3>At a glance</h3>
+              <div class="mini-kicks-agegrid">
+                <div class="mini-kicks-age">
+                  <strong>2–3</strong>
+                  <span>Parent &amp; child; play-based movement and ball familiarity.</span>
+                </div>
+                <div class="mini-kicks-age">
+                  <strong>4–5</strong>
+                  <span>Structured fun; fundamentals through games and activities.</span>
+                </div>
+              </div>
+              <p class="mini-kicks-note">
+                Weekend mornings (day &amp; time TBC). Use the form to join the list — we’ll confirm details when
+                sessions are ready.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="services">
         <div class="container">
           <div class="section-head">
@@ -248,12 +340,19 @@
                   <path d="M14 42l10-18 10 18M18 34h12" />
                 </svg>
               </div>
-              <h3>Kids Kicks Sessions</h3>
+              <h3>Mini Kicks Sessions</h3>
               <p>
-                Fun, age-right sessions that build fundamentals — dribbling, passing, shooting — and love for the game
-                in a positive, high-energy environment.
+                For <strong>ages 2–5</strong>: weekly sessions for our youngest players — parent &amp; child for 2–3s,
+                fun structured football for 4–5s. Confidence, coordination, and first touches with the ball.
+                <a href="#mini-kicks">More about MN Mini Kicks</a>.
               </p>
-              <a class="btn btn-ghost" href="#contact">Get started</a>
+              <a
+                class="btn btn-ghost"
+                href="https://docs.google.com/forms/d/1qHRt_CTebqp7fzGn4LnAEVLxRA7yOFCWUo5jcwsUfqg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Register interest</a
+              >
             </article>
           </div>
         </div>
@@ -574,7 +673,7 @@
       </div>
     </div>
 
-    <script src="./script.js?v=3" defer></script>
+    <script src="./script.js?v=4" defer></script>
   </body>
 </html>
 

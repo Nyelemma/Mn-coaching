@@ -127,6 +127,41 @@ a:hover {
   color: var(--text);
 }
 
+.brand--logo {
+  gap: 0;
+}
+
+.brand-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: drop-shadow(0 0 14px rgba(124, 252, 0, 0.28));
+  transition: filter var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.brand-logo-img {
+  display: block;
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand:hover .brand-logo-wrap {
+  filter: drop-shadow(0 0 20px rgba(124, 252, 0, 0.5));
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .brand-logo-img {
+    height: 42px;
+    width: 42px;
+  }
+}
+
 .brand-mark {
   display: grid;
   place-items: center;
@@ -1207,6 +1242,218 @@ textarea:focus-visible {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* —— MN Mini Kicks (2–5) —— */
+.section--mini-kicks {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border-strong);
+  background:
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(124, 252, 0, 0.1), transparent 55%),
+    linear-gradient(180deg, rgba(124, 252, 0, 0.04), transparent 45%),
+    var(--bg-2);
+}
+
+.section--mini-kicks::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 60%, rgba(124, 252, 0, 0.06), transparent 45%);
+  pointer-events: none;
+}
+
+.section--mini-kicks .container {
+  position: relative;
+  z-index: 1;
+}
+
+.mini-kicks-head-logo {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 14px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 20px rgba(124, 252, 0, 0.45));
+}
+
+.mini-kicks-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.mini-kicks-tag {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.mini-kicks-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-top: 28px;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mini-kicks-copy {
+  text-align: center;
+}
+
+.mini-kicks-lead {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 22px;
+  max-width: 48ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mini-kicks-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: grid;
+  gap: 14px;
+  text-align: left;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mini-kicks-points li {
+  position: relative;
+  padding-left: 36px;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.mini-kicks-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--primary);
+  background: var(--primary-muted);
+  box-shadow: 0 0 14px rgba(124, 252, 0, 0.2);
+}
+
+.mini-kicks-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-kicks-snap {
+  border-radius: 22px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  box-shadow: 0 0 40px rgba(124, 252, 0, 0.08);
+  padding: 22px 20px;
+  text-align: left;
+}
+
+.mini-kicks-snap h3 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 14px;
+}
+
+.mini-kicks-agegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.mini-kicks-age {
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.mini-kicks-age strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.mini-kicks-age span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.mini-kicks-note {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.page-home .section--mini-kicks .section-head {
+  margin-bottom: 0;
+}
+
+@media (min-width: 881px) {
+  .mini-kicks-layout {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 36px;
+    align-items: stretch;
+  }
+
+  .mini-kicks-copy {
+    text-align: left;
+  }
+
+  .mini-kicks-lead {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .mini-kicks-points {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .mini-kicks-icons {
+    justify-content: flex-start;
+  }
+
+  .mini-kicks-cta {
+    justify-content: flex-start;
+  }
+
+  .page-home .section--mini-kicks .section-head {
+    text-align: center;
   }
 }
 

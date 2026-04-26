@@ -93,9 +93,10 @@
                 "position": 1,
                 "item": {
                   "@type": "Service",
-                  "name": "1-to-1 football coaching",
-                  "description": "Individual sessions focused on technique, confidence and match impact for young players.",
+                  "name": "MN Mini Kicks (ages 2–5)",
+                  "description": "Weekly introductory sessions for toddlers and pre-schoolers: parent-and-child for 2–3s, structured fun for 4–5s. Register interest online.",
                   "provider": { "@id": "https://mncoaching.co.uk/#localbusiness" },
+                  "url": "https://docs.google.com/forms/d/1qHRt_CTebqp7fzGn4LnAEVLxRA7yOFCWUo5jcwsUfqg/viewform",
                   "areaServed": "Morecambe, Lancaster, Heysham, Carnforth and Lancashire"
                 }
               },
@@ -104,8 +105,8 @@
                 "position": 2,
                 "item": {
                   "@type": "Service",
-                  "name": "Kids Kicks sessions",
-                  "description": "Age-appropriate coaching for children — fundamentals and fun in a positive environment.",
+                  "name": "1-to-1 football coaching",
+                  "description": "Individual sessions focused on technique, confidence and match impact for young players.",
                   "provider": { "@id": "https://mncoaching.co.uk/#localbusiness" },
                   "areaServed": "Morecambe, Lancaster, Heysham, Carnforth and Lancashire"
                 }
@@ -113,6 +114,17 @@
               {
                 "@type": "ListItem",
                 "position": 3,
+                "item": {
+                  "@type": "Service",
+                  "name": "Kids Kicks sessions (ages 6–15+)",
+                  "description": "Age-appropriate coaching for school-age juniors — fundamentals and fun in a positive environment.",
+                  "provider": { "@id": "https://mncoaching.co.uk/#localbusiness" },
+                  "areaServed": "Morecambe, Lancaster, Heysham, Carnforth and Lancashire"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
                 "item": {
                   "@type": "Service",
                   "name": "Small group football coaching",
@@ -123,7 +135,7 @@
               },
               {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 5,
                 "item": {
                   "@type": "Service",
                   "name": "Position-specific football coaching",
@@ -139,7 +151,14 @@
             "@id": "https://mncoaching.co.uk/#localbusiness",
             "name": "MN Coaching",
             "url": "https://mncoaching.co.uk/",
-            "telephone": "+447943869697"
+            "telephone": "+447943869697",
+            "serviceType": [
+              "MN Mini Kicks (ages 2–5)",
+              "Kids Kicks sessions (ages 6–15+)",
+              "1-to-1 football coaching",
+              "Small group football coaching",
+              "Position-specific football coaching"
+            ]
           }
         ]
       }
@@ -152,17 +171,26 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles.css?v=3" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mn-coaching-logo.png" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="MN Coaching home">
-          <span class="brand-mark" aria-hidden="true">MN</span>
-          <span class="brand-text">Coaching</span>
+        <a class="brand brand--logo" href="index.html" aria-label="MN Coaching home">
+          <span class="brand-logo-wrap" aria-hidden="true">
+            <img
+              class="brand-logo-img"
+              src="./images/mn-coaching-logo.png?v=2"
+              alt=""
+              width="48"
+              height="48"
+              decoding="async"
+            />
+          </span>
         </a>
 
         <nav class="nav" aria-label="Primary">
@@ -179,6 +207,7 @@
 
           <div class="nav-panel" id="primary-nav" data-nav-panel>
             <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html#mini-kicks">Mini Kicks</a>
             <a class="nav-link" href="#service-one-to-one">Services</a>
             <a class="nav-link" href="#parent-reviews">Reviews</a>
             <a class="nav-link" href="index.html#contact">Contact</a>
@@ -211,9 +240,9 @@
           <p class="hero-kicker">MN Coaching</p>
           <h1>Football coaching services</h1>
           <p class="lead">
-            <strong>1-2-1 coaching</strong>, <strong>small group sessions</strong>, and <strong>Kids Kicks</strong> across
-            Morecambe, Lancaster, Heysham, Carnforth &amp; nearby — plus <strong>position-specific</strong> work when you
-            want extra detail.
+            <strong>1-2-1 coaching</strong>, <strong>small group sessions</strong>, <strong>Kids Kicks (6–15+)</strong>, and
+            <strong><a href="#service-mini-kicks">MN Mini Kicks (2–5)</a></strong> across Morecambe, Lancaster, Heysham,
+            Carnforth &amp; nearby — plus <strong>position-specific</strong> work when you want extra detail.
           </p>
           <p class="lead">
             Every plan is built around age, level, and goals. UEFA-qualified coaches; evenings, weekends; we can often
@@ -251,10 +280,36 @@
             </ul>
           </article>
 
+          <article class="service-detail" id="service-mini-kicks">
+            <h2>MN Mini Kicks (ages 2–5)</h2>
+            <p class="lede">
+              A separate programme from <a href="#service-kids">Kids Kicks (6–15+)</a>: weekly sessions designed for
+              preschoolers — parent-and-child time for <strong>ages 2–3</strong>, and fun structured football for
+              <strong>4–5</strong> — with emphasis on confidence, coordination, social play, and first touches with the
+              ball.
+            </p>
+            <ul class="bullets">
+              <li>Planned for <strong>Saturday or Sunday mornings</strong> (day &amp; time TBC)</li>
+              <li>Small steps, lots of encouragement, and coach-led games suited to attention spans</li>
+              <li>Register your interest — we’ll confirm venues and start dates as groups form</li>
+            </ul>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://docs.google.com/forms/d/1qHRt_CTebqp7fzGn4LnAEVLxRA7yOFCWUo5jcwsUfqg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Register interest</a
+              >
+              <a class="btn btn-ghost" href="index.html#contact">Contact</a>
+            </div>
+          </article>
+
           <article class="service-detail" id="service-kids">
             <h2>Kids Kicks sessions (ages 6–15+)</h2>
             <p class="lede">
-              Young players learn best when sessions feel like play with a purpose. We keep energy high, explain ideas in
+              For school-age juniors (not toddlers — see <a href="#service-mini-kicks">MN Mini Kicks (2–5)</a>). Young
+              players learn best when sessions feel like play with a purpose. We keep energy high, explain ideas in
               simple language, and celebrate effort as well as execution — while still pushing standards.
             </p>
             <ul class="bullets">
@@ -397,6 +452,6 @@
       </div>
     </div>
 
-    <script src="./script.js?v=3" defer></script>
+    <script src="./script.js?v=4" defer></script>
   </body>
 </html>
